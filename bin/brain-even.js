@@ -4,7 +4,7 @@ import getName from '../src/cli.js';
 console.log('Welcome to the Brain Games!');
 
 const getRandomNum = () => Math.floor(Math.random() * 100) + 1;
-const isEven = num => num % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 const userName = getName();
 
 console.log('Answer "yes" if the number is even, otherwise answer "no". ');
