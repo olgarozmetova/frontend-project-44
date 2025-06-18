@@ -10,7 +10,7 @@ const userName = getName();
 console.log('Answer "yes" if the number is even, otherwise answer "no". ');
 
 const playGame = () => {
-  for (let i = 1; i < 4; i++) {
+  for (let i = 1; i < 4; i += 1) {
     const question = getRandomNum();
     console.log(`Question: ${question}`);
 
