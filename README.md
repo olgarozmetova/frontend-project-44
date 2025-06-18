@@ -4,4 +4,4 @@
 
 ### My Project
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5feb3a65503249860349/maintainability)](https://codeclimate.com/github/olgarozmetova/frontend-project-44/maintainability)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=olgarozmetova_frontend-project-44)](https://sonarcloud.io/summary/new_code?id=olgarozmetova_frontend-project-44)
