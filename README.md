@@ -9,3 +9,7 @@
 ### View the Brain-Even Game
 
 https://asciinema.org/a/lbrbtAPfPyUsjaxMT6uHt1Vrx
+
+### View the Brain-Calc Game
+
+https://asciinema.org/a/MIoYWaI22dBG7r9F4tbGc5PMr
