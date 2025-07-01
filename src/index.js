@@ -17,12 +17,12 @@ const app = (questionDescr, getData) => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer === userAnswer) {
+    if (correctAnswer === Number(userAnswer)) {
       console.log('Correct!');
     } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${userName}!`,
+Let's try again, ${userName}!`
       );
       return;
     }

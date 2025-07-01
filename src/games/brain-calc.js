@@ -1,53 +1,34 @@
-import readlineSync from 'readline-sync';
-import getName from '../cli.js';
+import app from '../index.js';
+import getRandomNum from '../randomNum.js';
 
-console.log('Welcome to the Brain Games!');
+const questionDescr = 'What is the result of the expression?';
 
-const getRandomFirst = () => Math.floor(Math.random() * 100) + 1;
-const getRandomSecond = () => Math.floor(Math.random() * 100) + 1;
 const operations = ['+', '-', '*'];
-const getRamdomOperatorIndex = () => Math.floor(Math.random() * operations.length);
-const userName = getName();
+const getRandomOperatorIndex = () =>
+  Math.floor(Math.random() * operations.length);
 
-console.log('What is the result of the expression?');
+function getData() {
+  const num1 = getRandomNum();
+  const num2 = getRandomNum();
+  const operator = operations[getRandomOperatorIndex()];
+  const question = `${num1} ${operator} ${num2}`;
 
-const playGame2 = () => {
-  for (let i = 1; i < 4; i += 1) {
-    const num1 = getRandomFirst();
-    const num2 = getRandomSecond();
-    const operator = operations[getRamdomOperatorIndex()];
-    const question = `${num1} ${operator} ${num2}`;
-    console.log(`Question: ${question}`);
-
-    let correctAnswer;
-    switch (operator) {
-      case '+':
-        correctAnswer = num1 + num2;
-        break;
-      case '-':
-        correctAnswer = num1 - num2;
-        break;
-      case '*':
-        correctAnswer = num1 * num2;
-        break;
-      default:
-        return;
-    }
-
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    if (Number(userAnswer) === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${userName}!`,
-      );
-      return;
-    }
+  let correctAnswer;
+  switch (operator) {
+    case '+':
+      correctAnswer = num1 + num2;
+      break;
+    case '-':
+      correctAnswer = num1 - num2;
+      break;
+    case '*':
+      correctAnswer = num1 * num2;
+      break;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
   }
 
-  console.log(`Congratulations, ${userName}!`);
-};
+  return [question, correctAnswer];
+}
 
-export default playGame2;
+export default () => app(questionDescr, getData);
