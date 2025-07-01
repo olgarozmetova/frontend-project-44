@@ -6,7 +6,8 @@ console.log('Welcome to the Brain Games!');
 const getRandomFirst = () => Math.floor(Math.random() * 100) + 1;
 const getRandomSecond = () => Math.floor(Math.random() * 100) + 1;
 const operations = ['+', '-', '*'];
-const getRamdomOperatorIndex = () => Math.floor(Math.random() * operations.length);
+const getRamdomOperatorIndex = () =>
+  Math.floor(Math.random() * operations.length);
 const userName = getName();
 
 console.log('What is the result of the expression?');
@@ -41,7 +42,7 @@ const playGame2 = () => {
     } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${userName}!`,
+Let's try again, ${userName}!`
       );
       return;
     }

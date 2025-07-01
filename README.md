@@ -6,10 +6,6 @@
 
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=olgarozmetova_frontend-project-44)](https://sonarcloud.io/summary/new_code?id=olgarozmetova_frontend-project-44)
 
-### View the Brain-Even Game
-
-https://asciinema.org/a/lbrbtAPfPyUsjaxMT6uHt1Vrx
-
-### View the Brain-Calc Game
+### View the Brain Games
 
 https://asciinema.org/a/MIoYWaI22dBG7r9F4tbGc5PMr
