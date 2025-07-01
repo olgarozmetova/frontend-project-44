@@ -22,7 +22,7 @@ const app = (questionDescr, getData) => {
     } else {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.
-Let's try again, ${userName}!`
+Let's try again, ${userName}!`,
       );
       return;
     }
