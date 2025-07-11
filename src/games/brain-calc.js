@@ -5,7 +5,8 @@ const questionDescr = 'What is the result of the expression?';
 
 const operations = ['+', '-', '*'];
 const getRandomOperatorIndex = () => {
-  Math.floor(Math.random() * operations.length);
+  const randomIndex = Math.random() * operations.length;
+  return Math.floor(randomIndex);
 };
 
 function getData() {
