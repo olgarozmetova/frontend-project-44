@@ -1,3 +1,6 @@
-const getRandomNum = () => Math.floor(Math.random() * 100) + 1;
+export const getRandomNum = () => Math.floor(Math.random() * 100) + 1;
 
-export default getRandomNum;
+const operations = ['+', '-', '*'];
+
+export const operator =
+  operations[Math.floor(Math.random() * operations.length)];

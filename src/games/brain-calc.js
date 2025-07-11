@@ -1,14 +1,11 @@
 import app from '../index.js';
-import getRandomNum from '../randomNum.js';
+import { getRandomNum, operator } from '../randomNum.js';
 
 const questionDescr = 'What is the result of the expression?';
-
-const operations = ['+', '-', '*'];
 
 function getData() {
   const num1 = getRandomNum();
   const num2 = getRandomNum();
-  const operator = operations[Math.floor(Math.random() * operations.length)];
   const question = `${num1} ${operator} ${num2}`;
 
   let correctAnswer;
