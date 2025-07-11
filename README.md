@@ -4,7 +4,7 @@
 
 ### My Project
 
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=olgarozmetova_frontend-project-44)](https://sonarcloud.io/summary/new_code?id=olgarozmetova_frontend-project-44)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=olgarozmetova_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=olgarozmetova_frontend-project-44)
 
 ### View the Brain Games:
 
