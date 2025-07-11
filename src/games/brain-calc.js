@@ -4,8 +4,9 @@ import getRandomNum from '../randomNum.js';
 const questionDescr = 'What is the result of the expression?';
 
 const operations = ['+', '-', '*'];
-const getRandomOperatorIndex = () =>
+const getRandomOperatorIndex = () => {
   Math.floor(Math.random() * operations.length);
+};
 
 function getData() {
   const num1 = getRandomNum();
