@@ -4,15 +4,11 @@ import getRandomNum from '../randomNum.js';
 const questionDescr = 'What is the result of the expression?';
 
 const operations = ['+', '-', '*'];
-const getRandomOperatorIndex = () => {
-  const randomIndex = Math.random() * operations.length;
-  return Math.floor(randomIndex);
-};
 
 function getData() {
   const num1 = getRandomNum();
   const num2 = getRandomNum();
-  const operator = operations[getRandomOperatorIndex()];
+  const operator = operations[Math.floor(Math.random() * operations.length)];
   const question = `${num1} ${operator} ${num2}`;
 
   let correctAnswer;
