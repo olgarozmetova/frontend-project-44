@@ -17,7 +17,7 @@ const app = (questionDescr, getData) => {
 
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (correctAnswer === Number(userAnswer)) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(

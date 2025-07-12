@@ -15,7 +15,7 @@ function getData() {
   }
 
   const correctAnswer = num1;
-  return [question, correctAnswer];
+  return [question, correctAnswer.toString()];
 }
 
 export default () => app(questionDescr, getData);

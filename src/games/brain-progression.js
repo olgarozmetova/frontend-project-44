@@ -23,7 +23,7 @@ function getData() {
   const question = [...progression];
   question[hiddenIndex] = '..';
 
-  return [question.join(' '), correctAnswer];
+  return [question.join(' '), correctAnswer.toString()];
 }
 
 export default () => app(questionDescr, getData);
