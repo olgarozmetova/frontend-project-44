@@ -10,12 +10,20 @@
 
 ### brain-even
 
-https://asciinema.org/a/MIoYWaI22dBG7r9F4tbGc5PMr
+https://asciinema.org/a/lbrbtAPfPyUsjaxMT6uHt1Vrx
 
 ### brain-calc
 
+https://asciinema.org/a/yeSCZN4m9kgFqCsuWf4zVN8DG
+
 ### brain-gcd
+
+https://asciinema.org/a/EWzXny3eGgR2k1cyV7yOAB62d
 
 ### brain-progression
 
+https://asciinema.org/a/ymFLYzHjnz1vOTu8Ixkn0Ti8
+
 ### brain-prime
+
+https://asciinema.org/a/IykQO62kk7uCT7f242NX8gpDY
