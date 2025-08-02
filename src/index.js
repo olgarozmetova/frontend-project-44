@@ -11,7 +11,8 @@ const app = (questionDescr, getData) => {
   const userName = getName()
   console.log(questionDescr)
 
-  for (let i = 1; i < 4; i += 1) {
+  const roundCount = 3
+  for (let i = 0; i < roundCount; i += 1) {
     const [question, correctAnswer] = getData()
     console.log(`Question: ${question}`)
 
