@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Olga",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
