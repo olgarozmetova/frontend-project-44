@@ -4,27 +4,27 @@ import getRandomNum from '../randomNum.js'
 const questionDescr = 'What is the result of the expression?'
 
 const operations = ['+', '-', '*']
-const operator = operations[Math.floor(Math.random() * operations.length)]
+
+function calculate(num1, num2, operator) {
+  switch (operator) {
+    case '+':
+      return num1 + num2
+    case '-':
+      return num1 - num2
+    case '*':
+      return num1 * num2
+    default:
+      throw new Error(`Unknown operator: ${operator}`)
+  }
+}
 
 function getData() {
   const num1 = getRandomNum()
   const num2 = getRandomNum()
+  const operator = operations[Math.floor(Math.random() * operations.length)]
   const question = `${num1} ${operator} ${num2}`
 
-  let correctAnswer
-  switch (operator) {
-    case '+':
-      correctAnswer = num1 + num2
-      break
-    case '-':
-      correctAnswer = num1 - num2
-      break
-    case '*':
-      correctAnswer = num1 * num2
-      break
-    default:
-      throw new Error(`Unknown operator: ${operator}`)
-  }
+  const correctAnswer = calculate(num1, num2, operator)
 
   return [question, correctAnswer.toString()]
 }
