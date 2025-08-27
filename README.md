@@ -1,20 +1,38 @@
 # Brain-games
 
-## Setup
-
-```bash
-make install
-```
-
-This repository includes 5 games for a brain development.
+This repository includes 5 console games for a brain development: calculator, even number, greatest common divisor, prime number and progression. Each game asks questions that
+must be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again.
 
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/olgarozmetova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/olgarozmetova/frontend-project-44/actions)
 
-### My Project
+### Maintainability Badge:
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=olgarozmetova_frontend-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=olgarozmetova_frontend-project-44)
+
+## Setup
+
+```bash
+make install
+
+### Calculator
+make brain-calc
+
+### Even Number
+make brain-even
+
+### Greatest Common Divisor
+make brain-gcd
+
+### Prime Number
+make brain-prime
+
+### Progression
+make brain-progression
+```
+
+## Preview
 
 ### Asciinema brain-even:
 
