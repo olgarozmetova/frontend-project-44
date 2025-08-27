@@ -13,7 +13,7 @@ function calculate(num1, num2) {
   return num1
 }
 
-function getData() {
+function generateRound() {
   let num1 = getRandomNum()
   let num2 = getRandomNum()
   const question = `${num1} ${num2}`
@@ -22,4 +22,4 @@ function getData() {
   return [question, correctAnswer.toString()]
 }
 
-export default () => app(questionDescr, getData)
+export default () => app(questionDescr, generateRound)

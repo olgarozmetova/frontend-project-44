@@ -10,7 +10,7 @@ function generateProgressionArr(start, step, length) {
   return progression
 }
 
-function getData() {
+function generateRound() {
   const length = Math.floor(Math.random() * 6) + 5
   const start = Math.floor(Math.random() * 10) + 1
   const step = Math.floor(Math.random() * 5) + 1
@@ -26,4 +26,4 @@ function getData() {
   return [question.join(' '), correctAnswer.toString()]
 }
 
-export default () => app(questionDescr, getData)
+export default () => app(questionDescr, generateRound)

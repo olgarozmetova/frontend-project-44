@@ -1,7 +1,8 @@
 import app from '../index.js'
 import getRandomNum from '../randomNum.js'
 
-const questionDescr = 'Answer "yes" if given number is prime. Otherwise answer "no". '
+const questionDescr
+  = 'Answer "yes" if given number is prime. Otherwise answer "no". '
 
 const isPrime = (num) => {
   if (num < 2) return false
@@ -15,10 +16,10 @@ const isPrime = (num) => {
   return true
 }
 
-function getData() {
+function generateRound() {
   const number = getRandomNum()
   const correctAnswer = isPrime(number) ? 'yes' : 'no'
   return [number, correctAnswer]
 }
 
-export default () => app(questionDescr, getData)
+export default () => app(questionDescr, generateRound)

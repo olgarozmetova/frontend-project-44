@@ -18,7 +18,7 @@ function calculate(num1, num2, operator) {
   }
 }
 
-function getData() {
+function generateRound() {
   const num1 = getRandomNum()
   const num2 = getRandomNum()
   const operator = operations[Math.floor(Math.random() * operations.length)]
@@ -29,4 +29,4 @@ function getData() {
   return [question, correctAnswer.toString()]
 }
 
-export default () => app(questionDescr, getData)
+export default () => app(questionDescr, generateRound)

@@ -9,12 +9,12 @@ const getName = () => {
 
 const roundCount = 3
 
-const app = (questionDescr, getData) => {
+const app = (questionDescr, generateRound) => {
   const userName = getName()
   console.log(questionDescr)
 
   for (let i = 0; i < roundCount; i += 1) {
-    const [question, correctAnswer] = getData()
+    const [question, correctAnswer] = generateRound()
     console.log(`Question: ${question}`)
 
     const userAnswer = readlineSync.question('Your answer: ')
