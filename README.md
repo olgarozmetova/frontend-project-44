@@ -15,20 +15,15 @@ must be answered correctly. After three correct answers, the game is considered 
 
 ```bash
 make install
+```
 
-### Calculator
+## To launch a game
+
+```bash
 make brain-calc
-
-### Even Number
 make brain-even
-
-### Greatest Common Divisor
 make brain-gcd
-
-### Prime Number
 make brain-prime
-
-### Progression
 make brain-progression
 ```
 
