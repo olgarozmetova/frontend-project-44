@@ -21,7 +21,7 @@ function calculate(num1, num2, operator) {
 function generateRound() {
   const num1 = getRandomNum()
   const num2 = getRandomNum()
-  const operator = operations[Math.floor(Math.random() * operations.length)]
+  const operator = operations[getRandomNum(0, operations.length - 1)]
   const question = `${num1} ${operator} ${num2}`
 
   const correctAnswer = calculate(num1, num2, operator)

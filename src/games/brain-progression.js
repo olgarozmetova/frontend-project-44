@@ -1,4 +1,5 @@
 import app from '../index.js'
+import getRandomNum from '../randomNum.js'
 
 const questionDescr = 'What number is missing in the progression?'
 
@@ -11,13 +12,13 @@ function generateProgressionArr(start, step, length) {
 }
 
 function generateRound() {
-  const length = Math.floor(Math.random() * 6) + 5
-  const start = Math.floor(Math.random() * 10) + 1
-  const step = Math.floor(Math.random() * 5) + 1
+  const length = getRandomNum(5, 10)
+  const start = getRandomNum(1, 10)
+  const step = getRandomNum(1, 5)
 
   const progression = generateProgressionArr(start, step, length)
 
-  const hiddenIndex = Math.floor(Math.random() * length)
+  const hiddenIndex = getRandomNum(0, length - 1)
   const correctAnswer = progression[hiddenIndex]
 
   const question = [...progression]
